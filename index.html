@@ -1,3 +1,14 @@
+<!--
+
+This is a great start. Some thoughts / suggestions
+
+[1] Where you are trying to get certain columns to behave different based on screen size, you'll need to manipulate the 'col-' classes to inform them how to behave. In your case for the circular image, you'll actually want it to appear before the "My name is..." and then use floats to pull it to the right on larger screens.
+
+[2] Take a look at the 'img-responsive' class in Bootstrap to make sure your images are responsive and do not cause overlap or overflow as you scale down the screen.
+
+[3] The majority of your content is contained within a 'col-xs-6', which is causing it to be quite narrow. Given the responsive nature of the web, it would make sense to allow your content to occupy more space horizontally, and perhaps centering everything on the page would balance out that space. I have posted some resources about 'Box Model' and 'CSS Positioning' that will help you manipulate those sorts of things.
+
+-->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -54,15 +65,15 @@
                 <li ><a href="#b" data-toggle="tab">Two</a></li>
                 <li><a href="#c" data-toggle="tab">Twee</a></li>
               </ul>
-              <div class="col-xs-6">
+              <div class="col-md-12"><!-- this was a problem, currently contains all tab content-->
               <div class="tab-content">
                <div class="tab-pane active" id="a">
                    <div class="row">
-                      <div id="landing-content-header" class="col-xs-8">
+                      <div id="landing-content-header" class="col-md-8">
                             <h1>My name is Peyton Tiroff, and I make things</h1>
                            <p > Digitally, usually</p>
                       </div>
-                      <div id="Peytons-headshot" class="col-xs-2"> <!-- I want this to be right on large and float up above intro on small-->
+                      <div id="Peytons-headshot" class="col-md-2"> <!-- I want this to be right on large and float up above intro on small-->
                         <img src="http://placehold.it/140x140" title="This is a picture of Peyton" class="img-circle">
                       </div>
                   </div>
@@ -79,37 +90,37 @@
                   </div>
               </div>
                <div class="tab-pane" id="b">
-               <div class="col-xs-12">
+               <div class="col-md-12">
                 <h3> This is a thing I did I'd like to share </h3>
                </div>
                  <div class="row">
-                  <div class="col-xs-8">
+                  <div class="col-md-8">
                     <p>
                       If it smells like fish eat as much as you wish. Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff pelt around the house and up and down stairs chasing phantoms or meowing non stop for food for walk on car leaving trail of paw prints on hood and windshield or slap owner's face at 5am until human fills food dish where is my slave? I'm getting hungry, so plan steps for world domination. Lick the other cats jump around on couch, meow constantly until given food, .
                     </p>
                   </div>
-                  <div class="col-xs-4">
+                  <div class="col-md-4">
                     <div class="row">
-                      <div class="col-xs-12">
+                      <div class="col-md-12">
                         <img src="http://placehold.it/140x140" title="This is a picture of  a project">
                       </div>
-                      <div class="col-xs-12">
+                      <div class="col-md-12">
                         <img src="http://placehold.it/140x140" title="This is a picture of a project "> <!--want to add more space to these, maybe make into verticle carousel/rotating image belt-->
                       </div>
-                      <div class="col-xs-12">
+                      <div class="col-md-12">
                         <img src="http://placehold.it/140x140" title="This is a picture of a project ">
                       </div>
                     </div>
                   </div>
                  </div>
                  <div class="row">
-                  <div class="col-xs-12">
+                  <div class="col-md-12">
                     <img src="http://placehold.it/500x240" title="Either a widget or demonstration of project, else maybe just larger version of a photo selected from the right sidebar">
                   </div>
                  </div>
                </div>
                <div class="tab-pane" id="c">
-                <div class="col-xs-12">
+                <div class="col-md-12">
                   <h2>Thoughts on things</h2>
                   <div class="row">
                     <div class="col-sm-6 col-md-4">
