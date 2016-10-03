@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" href="#"> <!--TODO-->
+
+  <title>Peyton Tiroff</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="static/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <link href="static/starter-template.css" rel="stylesheet">
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+      <![endif]-->
+    </head>
+
+    <body>
+      <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="nav-container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Peyton Tiroff</a> <!-- I want to get this brand label to adjust width to match the tabs, and have the other three parts of the tab align to the right-->
+          </div>
+          <div id="navbar" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+              <li ><a href="#">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!--http://www.bootply.com/74926#-->
+      <div class="container-fluid">
+        <div class="row">  <!--main row of page-->
+          <div class="col-xs-12 col-sm-1 tabs-left"> <!-- column containing tabs-->
+            <ul class="nav nav-tabs">
+              <li><a href="index.html">This Is Peyton</a></li>
+              <li><a href="SingleProjectPage.html">My Big Project</a></li>
+              <li class="active"><a href="#">Odds &amp; Ends</a></li>
+            </ul>
+          </div>
+          <div class="col-xs-12 col-sm-11 tab-content"> <!-- Column containing content of tab-->
+            <div class="col-md-12">
+              <h2 class="text-center"><strong>Thoughts on things</strong></h2>
+              <div class="row">
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                  <div class="thumbnail">
+                    <img src="http://placehold.it/240x240" alt="Relevant Image? Categorical Marking?" class="center-block img-responsive"> <!-- might make these images rectangular -->
+                    <div class="caption">
+                      <h4>This Is My Title To Pull You In</h4>
+                      <p>Exposition! Read All About It!</p>
+                      <p><a href="#" class="btn btn-default" role="button">More</a></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                  <div class="thumbnail"> <!-- on medium-sized screen, this thumbnail is slightly longer than the others, causing the column that wraps to go all the way to the right. Is there a way just to have  them align below the column above them (as in, in line with column of grid but not row)-->
+                    <img src="http://placehold.it/240x240" alt="Relevant Image? Categorical Marking?" class="center-block img-responsive">
+                    <div class="caption">
+                      <h4>Maybe some will just be links to pieces I like</h4>
+                      <p>I mean I'm not going to say whats been said better</p>
+                      <p><a href="#" class="btn btn-default" role="button">More</a></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                  <div class="thumbnail">
+                    <img src="http://placehold.it/240x240" alt="Relevant Image? Categorical Marking?" class="center-block img-responsive">
+                    <div class="caption">
+                      <h4>Maybe my idea stubs and to-dos could go here</h4>
+                      <p>I've always got things I want to do</p>
+                      <p><a href="#" class="btn btn-default" role="button">More</a></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3 pull-left">
+                  <div class="thumbnail">
+                    <img src="http://placehold.it/240x240" alt="Relevant Image? Categorical Marking?" class="center-block img-responsive">
+                    <div class="caption">
+                      <h4>Or just non-code non-tech stuff goes here</h4>
+                      <p>I could use the encouragement to do more outside of my degreer</p>
+                      <p><a href="#" class="btn btn-default" role="button">More</a></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                  <div class="thumbnail">
+                    <img src="http://placehold.it/240x240" alt="Relevant Image? Categorical Marking?" class="center-block img-responsive">
+                    <div class="caption">
+                      <h4>Also make this into a scrolling carousel?</h4>
+                      <p>There's a good chance of this filling up very quickly</p> <!-- is there any way of getting this all to float up and smush together?-->
+                      <p><a href="#" class="btn btn-default" role="button">More</a></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> <!--Close of main row-->
+      </div>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="static/bootstrap/js/bootstrap.min.js"></script>
+  </body>
+  </html>
