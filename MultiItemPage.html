@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="">
   <meta name="author" content="">
-  <link rel="icon" href="#"> <!--TODO-->
+  <link rel="shortcut icon" href="favicon.ico" />
 
   <title>Peyton Tiroff</title>
 
@@ -33,6 +33,7 @@
               <span class="icon-bar"></span>
             </button>
             <a class="navbar-brand" href="#">Peyton Tiroff</a> <!-- I want to get this brand label to adjust width to match the tabs, and have the other three parts of the tab align to the right-->
+            <!-- A little confused by what you mean with this. Let's talk in class -->
           </div>
           <div id="navbar" class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
@@ -69,49 +70,62 @@
                 </div>
                 <div class="col-sm-6 col-md-4 col-lg-3">
                   <div class="thumbnail"> <!-- on medium-sized screen, this thumbnail is slightly longer than the others, causing the column that wraps to go all the way to the right. Is there a way just to have  them align below the column above them (as in, in line with column of grid but not row)-->
-                    <img src="http://placehold.it/240x240" alt="Relevant Image? Categorical Marking?" class="center-block img-responsive">
-                    <div class="caption">
-                      <h4>Maybe some will just be links to pieces I like</h4>
-                      <p>I mean I'm not going to say whats been said better</p>
-                      <p><a href="#" class="btn btn-default" role="button">More</a></p>
-                    </div>
-                  </div>
+
+                  <!--
+
+                  There are a few potential solutions here
+
+                  [1] Using rows, as you mentioned, but this would cause some issues with wrapping the way you've got the grid set up now
+
+                  [2] Again, Flexbox, a bit more complicated, but allows you to force all items in a row to be the same height
+
+                  [3] Manually set the height for these divs. Not the best practice, but not automatically a bad one. It can be done in a way that the content never overflows its container, and will allow things to appear more smoothly across the board
+
+                -->
+                <img src="http://placehold.it/240x240" alt="Relevant Image? Categorical Marking?" class="center-block img-responsive">
+                <div class="caption">
+                  <h4>Maybe some will just be links to pieces I like</h4>
+                  <p>I mean I'm not going to say whats been said better</p>
+                  <p><a href="#" class="btn btn-default" role="button">More</a></p>
                 </div>
-                <div class="col-sm-6 col-md-4 col-lg-3">
-                  <div class="thumbnail">
-                    <img src="http://placehold.it/240x240" alt="Relevant Image? Categorical Marking?" class="center-block img-responsive">
-                    <div class="caption">
-                      <h4>Maybe my idea stubs and to-dos could go here</h4>
-                      <p>I've always got things I want to do</p>
-                      <p><a href="#" class="btn btn-default" role="button">More</a></p>
-                    </div>
-                  </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+              <div class="thumbnail">
+                <img src="http://placehold.it/240x240" alt="Relevant Image? Categorical Marking?" class="center-block img-responsive">
+                <div class="caption">
+                  <h4>Maybe my idea stubs and to-dos could go here</h4>
+                  <p>I've always got things I want to do</p>
+                  <p><a href="#" class="btn btn-default" role="button">More</a></p>
                 </div>
-                <div class="col-sm-6 col-md-4 col-lg-3 pull-left">
-                  <div class="thumbnail">
-                    <img src="http://placehold.it/240x240" alt="Relevant Image? Categorical Marking?" class="center-block img-responsive">
-                    <div class="caption">
-                      <h4>Or just non-code non-tech stuff goes here</h4>
-                      <p>I could use the encouragement to do more outside of my degreer</p>
-                      <p><a href="#" class="btn btn-default" role="button">More</a></p>
-                    </div>
-                  </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3 pull-left">
+              <div class="thumbnail">
+                <img src="http://placehold.it/240x240" alt="Relevant Image? Categorical Marking?" class="center-block img-responsive">
+                <div class="caption">
+                  <h4>Or just non-code non-tech stuff goes here</h4>
+                  <p>I could use the encouragement to do more outside of my degreer</p>
+                  <p><a href="#" class="btn btn-default" role="button">More</a></p>
                 </div>
-                <div class="col-sm-6 col-md-4 col-lg-3">
-                  <div class="thumbnail">
-                    <img src="http://placehold.it/240x240" alt="Relevant Image? Categorical Marking?" class="center-block img-responsive">
-                    <div class="caption">
-                      <h4>Also make this into a scrolling carousel?</h4>
-                      <p>There's a good chance of this filling up very quickly</p> <!-- is there any way of getting this all to float up and smush together?-->
-                      <p><a href="#" class="btn btn-default" role="button">More</a></p>
-                    </div>
-                  </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+              <div class="thumbnail">
+                <img src="http://placehold.it/240x240" alt="Relevant Image? Categorical Marking?" class="center-block img-responsive">
+                <div class="caption">
+                  <h4>Also make this into a scrolling carousel?</h4>
+                  <p>There's a good chance of this filling up very quickly</p> <!-- is there any way of getting this all to float up and smush together?-->
+                  <!-- If you are referring to the 'quickly' breaking to a new line, there isn't really. This is controlled through the width of the container, so you'd need to manually adjust for it to appear the way you want at different breakpoints -->
+                  <p><a href="#" class="btn btn-default" role="button">More</a></p>
                 </div>
               </div>
             </div>
           </div>
-        </div> <!--Close of main row-->
+        </div>
       </div>
+    </div> <!--Close of main row-->
+  </div>
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
