@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="">
   <meta name="author" content="">
-  <link rel="shortcut icon" href="favicon.ico" />
+  <link rel="shortcut icon" href="static/favicon.ico" />
 
   <title>Peyton Tiroff</title>
 
@@ -23,27 +23,6 @@
     </head>
 
     <body>
-      <nav class="navbar navbar-inverse navbar-fixed-top">
-        <div class="nav-container">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#">Peyton Tiroff</a> <!-- I want to get this brand label to adjust width to match the tabs, and have the other three parts of the tab align to the right-->
-            <!-- A little confused by what you mean with this. Let's talk in class -->
-          </div>
-          <div id="navbar" class="collapse navbar-collapse">
-            <ul class="nav navbar-nav">
-              <li ><a href="#">Home</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#contact">Contact</a></li>
-            </ul>
-          </div>
-        </div>
-      </nav>
       <!--http://www.bootply.com/74926#-->
       <div class="container-fluid">
         <div class="row">  <!--main row of page-->
@@ -55,38 +34,27 @@
             </ul>
           </div>
           <div class="col-xs-12 col-sm-11 tab-content"> <!-- Column containing content of tab-->
-            <div class="col-md-12">
-              <h2 class="text-center"><strong>Thoughts on things</strong></h2>
-              <div class="row">
-                <div class="col-sm-6 col-md-4 col-lg-3">
-                  <div class="thumbnail">
-                    <img src="http://placehold.it/240x240" alt="Relevant Image? Categorical Marking?" class="center-block img-responsive"> <!-- might make these images rectangular -->
-                    <div class="caption">
-                      <h4>This Is My Title To Pull You In</h4>
-                      <p>Exposition! Read All About It!</p>
-                      <p><a href="#" class="btn btn-default" role="button">More</a></p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-sm-6 col-md-4 col-lg-3">
-                  <div class="thumbnail"> <!-- on medium-sized screen, this thumbnail is slightly longer than the others, causing the column that wraps to go all the way to the right. Is there a way just to have  them align below the column above them (as in, in line with column of grid but not row)-->
-
-                  <!--
-
-                  There are a few potential solutions here
-
-                  [1] Using rows, as you mentioned, but this would cause some issues with wrapping the way you've got the grid set up now
-
-                  [2] Again, Flexbox, a bit more complicated, but allows you to force all items in a row to be the same height
-
-                  [3] Manually set the height for these divs. Not the best practice, but not automatically a bad one. It can be done in a way that the content never overflows its container, and will allow things to appear more smoothly across the board
-
-                -->
-                <img src="http://placehold.it/240x240" alt="Relevant Image? Categorical Marking?" class="center-block img-responsive">
+            <div class="col-x-12">
+              <h2 class="text-center"><strong>Information Visualizations</strong></h2>
+            </div>
+            <div class="col-xs-8 col-xs-offset-2">
+            <p class="text-center">These are some of the visualizations in d3 I developed for my Special Topics:Information Visualization class. Most are done in d3.js. You can see my progress with the language as times goes on</p> <!--this disappears on small screens-->
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+              <div class="thumbnail">
+                <img src="static/first-chart.png" alt="My first data visualization" class="center-block img-responsive"> <!-- might make these images rectangular -->
                 <div class="caption">
-                  <h4>Maybe some will just be links to pieces I like</h4>
-                  <p>I mean I'm not going to say whats been said better</p>
-                  <p><a href="#" class="btn btn-default" role="button">More</a></p>
+                  <h4>My Very First Chart</h4>
+                  <p>Made using c3.js, visualizing some very interesting data collected about our class</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+              <div class="thumbnail">
+                <img src="static/hw2pt2.png" alt="My First D3 visual" class="center-block img-responsive">
+                <div class="caption">
+                  <h4>First pure d3 visual with fake data</h4>
+                  <p>Just learning the basics of d3</p>
                 </div>
               </div>
             </div>
@@ -96,20 +64,20 @@
                 <div class="caption">
                   <h4>Maybe my idea stubs and to-dos could go here</h4>
                   <p>I've always got things I want to do</p>
-                  <p><a href="#" class="btn btn-default" role="button">More</a></p>
                 </div>
               </div>
             </div>
+            <div class="clearfix visible-md-block"></div>
             <div class="col-sm-6 col-md-4 col-lg-3 pull-left">
               <div class="thumbnail">
-                <img src="http://placehold.it/240x240" alt="Relevant Image? Categorical Marking?" class="center-block img-responsive">
+                <img src="static/hw2pt3.png" alt="Chart of car MPG based on distance traveled" class="center-block img-responsive">
                 <div class="caption">
-                  <h4>Or just non-code non-tech stuff goes here</h4>
-                  <p>I could use the encouragement to do more outside of my degreer</p>
-                  <p><a href="#" class="btn btn-default" role="button">More</a></p>
+                  <h4>Miles Per Gallon vs Distance Traveled</h4>
+                  <p>Something a little more complex as a cut my teeth on d3</p>
                 </div>
               </div>
             </div>
+                        <div class="clearfix visible-lg-block"></div>
             <div class="col-sm-6 col-md-4 col-lg-3">
               <div class="thumbnail">
                 <img src="http://placehold.it/240x240" alt="Relevant Image? Categorical Marking?" class="center-block img-responsive">
@@ -117,15 +85,14 @@
                   <h4>Also make this into a scrolling carousel?</h4>
                   <p>There's a good chance of this filling up very quickly</p> <!-- is there any way of getting this all to float up and smush together?-->
                   <!-- If you are referring to the 'quickly' breaking to a new line, there isn't really. This is controlled through the width of the container, so you'd need to manually adjust for it to appear the way you want at different breakpoints -->
-                  <p><a href="#" class="btn btn-default" role="button">More</a></p>
                 </div>
               </div>
             </div>
           </div>
         </div>
+        <!-- Close of main row -->
       </div>
-    </div> <!--Close of main row-->
-  </div>
+    </div>
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
