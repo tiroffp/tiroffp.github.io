@@ -27,7 +27,7 @@ body {
 .pill-content > .active {
   display: block;
 }
-@media (min-width: 768px ) {
+@media (min-width: 768px ) { /*GREATER THAN sm breakpoint*/
   .tabs-left > .nav-tabs > li {
     float: none;
   }
@@ -50,6 +50,9 @@ body {
     -moz-border-radius: 4px 0 0 4px;
     border-radius: 4px 0 0 4px;
   }
+
+}
+
 }
 .tabs-left > .nav-tabs > li > a:hover,
 .tabs-left > .nav-tabs > li > a:focus {
@@ -62,7 +65,7 @@ body {
   border-color: #ddd transparent #ddd #ddd;
   *border-right-color: #ffffff;
 }
- /*These classes are for  quick identification of different divs when debugging*/
+/*These classes are for  quick identification of different divs when debugging */
 .red {
   background-color:  red;
 }

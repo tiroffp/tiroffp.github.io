@@ -24,7 +24,7 @@ With the way you've set this up, I think it would be cool to explore using solel
   <!-- Bootstrap core CSS -->
   <link href="static/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-  <link href="static/starter-template.css" rel="stylesheet">
+  <link href="static/styles.css" rel="stylesheet">
 
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -34,28 +34,6 @@ With the way you've set this up, I think it would be cool to explore using solel
     </head>
 
     <body>
-      <nav class="navbar navbar-inverse navbar-fixed-top">
-        <div class="nav-container">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#">Peyton Tiroff</a>
-            <!-- I want to get this brand label to adjust width to match the tabs, and have the other three parts of the tab align to the right-->
-            <!-- actually, might even get rid of this and just go with the sole left-hand tab navigation. Maybe I'll copy the collapse feature as well to keep the page from needing to scroll vertically/make it work for mobile/small screens-->
-          </div>
-          <div id="navbar" class="collapse navbar-collapse">
-            <ul class="nav navbar-nav">
-              <li><a href="#">Home</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#contact">Contact</a></li>
-            </ul>
-          </div>
-        </div>
-      </nav>
       <!--http://www.bootply.com/74926#-->
       <div class="container-fluid">
         <div class="row">
@@ -72,13 +50,13 @@ With the way you've set this up, I think it would be cool to explore using solel
           <div class="col-xs-12 col-sm-11 tab-content">
             <!-- Column containing content of tab-->
             <div class="row">
-              <div id="Peytons-headshot" class="col-xs-12 col-lg-2 pull-right">
+              <div id="Peytons-headshot" class="col-xs-12 col-md-4 col-lg-4 pull-right red">
                 <!-- Image dissapears on small screens, can't get to center-->
                 <!-- Looks to me like the image stays for all screens, so maybe you fixed this. As for centering it, try using the 'center-block' instead of 'left-block' class like you did for the image below -->
-                <img src="http://placehold.it/200x200" title="This is a picture of Peyton" class="img-responsive img-circle left-block">
+                <img src="static/headshot.jpg" title="This is a picture of Peyton" class="img-circle left-block">
               </div>
               <!-- <div id="landing-content-text" class="col-xs-12 col-lg-10"> -->
-              <div id="intro-header" class="col-xs-12 col-lg-10 text-right">
+              <div id="intro-header" class="col-xs-12 col-md-8 col-lg-8 text-right">
                 <!-- is there some way to get this to align vertically with the image?-->
                 <!-- The easiest way is going to be to apply a top margin or padding to the text column, but not the image one. A more difficult method would be with Flexbox, which is quite powerful for controlling layouts, though has a steeper learning curve -->
                 <h1>My name is Peyton Tiroff, and I make things</h1>
