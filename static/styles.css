@@ -26,50 +26,80 @@ body {
 .tab-content > .active,
 .pill-content > .active {
   display: block;
-}
-@media (min-width: 768px ) { /*GREATER THAN sm breakpoint*/
-  .tabs-left > .nav-tabs > li {
-    float: none;
   }
 
-  .tabs-left > .nav-tabs > li > a { /*Gives tabs height and appearence of facing right*/
-    min-width: 74px;
-    margin-right: 10px;
-    margin-bottom: 3px;
-    height: 150px;
+  /*  #intro-header {
+      background-color:  blue;
+      margin-top: 50%;
+      margin-bottom: 50%;
+    }
+    doing this blows up the height of the row
+*/
+
+    .tabs-left > .nav-tabs > li > a {
+      margin-right: -1px;
+      -webkit-border-radius: 4px 0 0 4px;
+      -moz-border-radius: 4px 0 0 4px;
+      border-radius: 4px 0 0 4px;
+    }
+
+  /*GREATER THAN sm breakpoint*/
+  @media (min-width: 768px ) {
+    .tabs-left > .nav-tabs > li {
+      float: none;
+    }
+    /*Gives tabs height and appearence of facing right*/
+    .tabs-left > .nav-tabs > li > a {
+      min-width: 74px;
+      margin-right: 10px;
+      margin-bottom: 3px;
+      height: 150px;
+    }
+    /*Gives tab bottom border*/
+    .tabs-left > .nav-tabs {
+      float: left;
+      margin-right: 19px;
+      border-right: 1px solid #ddd;
+    }
+    /*Gives rounded tab edges*/
+    .tabs-left > .nav-tabs > li > a {
+      margin-right: -1px;
+      -webkit-border-radius: 4px 0 0 4px;
+      -moz-border-radius: 4px 0 0 4px;
+      border-radius: 4px 0 0 4px;
+    }
+
+  }
+  /*LESS THAN md breakpoint*/
+  @media (max-width: 992px ) {
+
+    #img-headshot {
+      display:block;
+      margin:auto;
+    }
+
+    #intro-header {
+      text-align: center;
+    }
+
+
+  }
+  .tabs-left > .nav-tabs > li > a:hover,
+  .tabs-left > .nav-tabs > li > a:focus {
+    border-color: #eeeeee #dddddd #eeeeee #eeeeee;
   }
 
-  .tabs-left > .nav-tabs { /*Gives tab bottom border*/
-    float: left;
-    margin-right: 19px;
-    border-right: 1px solid #ddd;
+  .tabs-left > .nav-tabs .active > a,
+  .tabs-left > .nav-tabs .active > a:hover,
+  .tabs-left > .nav-tabs .active > a:focus {
+    border-color: #ddd transparent #ddd #ddd;
+    *border-right-color: #ffffff;
   }
-  .tabs-left > .nav-tabs > li > a { /*Gives rounded tab edges*/
-    margin-right: -1px;
-    -webkit-border-radius: 4px 0 0 4px;
-    -moz-border-radius: 4px 0 0 4px;
-    border-radius: 4px 0 0 4px;
+  /*These classes are for  quick identification of different divs when debugging */
+  .red {
+    background-color:  red;
   }
 
-}
-
-}
-.tabs-left > .nav-tabs > li > a:hover,
-.tabs-left > .nav-tabs > li > a:focus {
-  border-color: #eeeeee #dddddd #eeeeee #eeeeee;
-}
-
-.tabs-left > .nav-tabs .active > a,
-.tabs-left > .nav-tabs .active > a:hover,
-.tabs-left > .nav-tabs .active > a:focus {
-  border-color: #ddd transparent #ddd #ddd;
-  *border-right-color: #ffffff;
-}
-/*These classes are for  quick identification of different divs when debugging */
-.red {
-  background-color:  red;
-}
-
-.blue {
-  background-color:  blue;
-}
+  .blue {
+    background-color:  blue;
+  }
