@@ -1,111 +1,68 @@
 body {
   padding-top: 50px;
 }
-.starter-template {
-  padding: 40px 15px;
-  text-align: center;
-}
-.container.content{
-  padding: 40px 15px;
-  width: 100%;
-  height: 100%;
-  /*position: absolute;  look at this, see what its affecting. Maybe fixed?*/
-  top: 0;
-  left: 0;
+
+.vcenter {
+  display: inline-block;
+  vertical-align: middle;
+  /*float: none;*/
 }
 
 .tabs-left > .nav-tabs {
-  border-bottom: 0;
+  border-bottom: 0; /* removes line from bottom tab*/
 }
 
-.tab-content > .tab-pane,
-.pill-content > .pill-pane {
-  display: none;
+
+/*GREATER THAN sm breakpoint*/
+@media (min-width: 768px ) {
+
+  .tabs-left > .nav-tabs > li > a {
+    
+  }
+  /*Gives tab bottom border*/
+  .tabs-left > .nav-tabs {
+    float: left;
+    border-right: 1px solid #ddd;
+  }
+  /*Gives rounded tab edges*/
+  .tabs-left > .nav-tabs > li > a {
+    -webkit-border-radius: 4px 0 0 4px;
+    -moz-border-radius: 4px 0 0 4px;
+    border-radius: 4px 0 0 4px;
+    height: 150px;
+  }
+
+}
+/*LESS THAN md breakpoint*/
+@media (max-width: 992px ) {
+
+  #img-headshot {
+    display:block;
+    margin:auto;
+  }
+
+  #intro-header {
+    text-align: center;
+  }
+
+
+}
+.tabs-left > .nav-tabs > li > a:hover,
+.tabs-left > .nav-tabs > li > a:focus {
+  border-color: #eeeeee #dddddd #eeeeee #eeeeee;
 }
 
-.tab-content > .active,
-.pill-content > .active {
-  display: block;
+.tabs-left > .nav-tabs .active > a,
+.tabs-left > .nav-tabs .active > a:hover,
+.tabs-left > .nav-tabs .active > a:focus {
+  border-color: #ddd transparent #ddd #ddd;
+  *border-right-color: #ffffff;
+}
+/*These classes are for  quick identification of different divs when debugging */
+.red {
+  background-color:  red;
 }
 
-  /*  #intro-header {
-      background-color:  blue;
-      margin-top: 50%;
-      margin-bottom: 50%;
-    }
-    doing this blows up the height of the row
-    */
-
-    .tabs-left > .nav-tabs > li > a {
-      margin-right: -1px;
-      -webkit-border-radius: 4px 0 0 4px;
-      -moz-border-radius: 4px 0 0 4px;
-      border-radius: 4px 0 0 4px;
-    }
-
-.vcenter {
-    display: inline-block;
-    vertical-align: middle;
-    /*float: none;*/
+.blue {
+  background-color:  blue;
 }
-
-    /*GREATER THAN sm breakpoint*/
-    @media (min-width: 768px ) {
-      .tabs-left > .nav-tabs > li {
-        float: none;
-      }
-      /*Gives tabs height and appearence of facing right*/
-      .tabs-left > .nav-tabs > li > a {
-        min-width: 74px;
-        margin-right: 10px;
-        margin-bottom: 3px;
-        height: 150px;
-      }
-      /*Gives tab bottom border*/
-      .tabs-left > .nav-tabs {
-        float: left;
-        margin-right: 19px;
-        border-right: 1px solid #ddd;
-      }
-      /*Gives rounded tab edges*/
-      .tabs-left > .nav-tabs > li > a {
-        margin-right: -1px;
-        -webkit-border-radius: 4px 0 0 4px;
-        -moz-border-radius: 4px 0 0 4px;
-        border-radius: 4px 0 0 4px;
-      }
-
-    }
-    /*LESS THAN md breakpoint*/
-    @media (max-width: 992px ) {
-
-      #img-headshot {
-        display:block;
-        margin:auto;
-      }
-
-      #intro-header {
-        text-align: center;
-      }
-
-
-    }
-    .tabs-left > .nav-tabs > li > a:hover,
-    .tabs-left > .nav-tabs > li > a:focus {
-      border-color: #eeeeee #dddddd #eeeeee #eeeeee;
-    }
-
-    .tabs-left > .nav-tabs .active > a,
-    .tabs-left > .nav-tabs .active > a:hover,
-    .tabs-left > .nav-tabs .active > a:focus {
-      border-color: #ddd transparent #ddd #ddd;
-      *border-right-color: #ffffff;
-    }
-    /*These classes are for  quick identification of different divs when debugging */
-    .red {
-      background-color:  red;
-    }
-
-    .blue {
-      background-color:  blue;
-    }
