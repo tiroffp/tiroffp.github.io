@@ -32,7 +32,7 @@
       <div class="container-fluid">
         <div class="row">
           <!--main row of page-->
-          <div class="col-xs-12 col-sm-2 col-md-1 tabs-left"> <!--This is still screwy - can only get responsive resizing of tabs on sm breakpoint-->
+          <div class="col-xs-12 col-sm-2  tabs-left"> <!--This is still screwy - can only get responsive resizing of tabs on sm breakpoint-->
             <!-- column containing tabs-->
             <ul class="nav nav-tabs">
               <!-- one idea to keep the number of tabs on this side low - have higher-level catgories that, when clicked on, get pinned to the top and subcategory tabs appear below-->
@@ -43,20 +43,21 @@
               <li><a href="MultiItemPage.html">Small Projects</a></li>
             </ul>
           </div>
-          <div class="col-xs-12 col-sm-10 col-md-11 tab-content">
+          <div class="col-xs-12 col-sm-10 tab-content">
             <!-- Column containing content of tab-->
-            <div class="row top-row">
+            <div class="row flex">
               <div id="Peytons-headshot" class="col-xs-12 col-md-4 col-lg-3 vcenter pull-right">
                 <img id='img-headshot' src="static/headshot.jpg" title="This is a picture of Peyton" class="img-circle left-block">
               </div>
               <!-- <div id="landing-content-text" class="col-xs-12 col-lg-10"> -->
-              <div id="intro-header" class="col-sm-12 col-md-8 col-lg-8 text-right vcenter">
-                <!-- I spent a ton of time trying to get this to center, but I couldn't get it to align with the image. Flexbox/marigins seemed to break the bootstraps layout-->
+              <div id="intro-header" class="col-sm-12 col-md-8 col-lg-9 text-right vcenter">
                 <h1>My name is Peyton Tiroff, and I make things</h1>
                 <p> Digitally, usually</p>
               </div>
-              <div id="intro-text" class="col-xs-12 col-sm-offset-1 col-sm-10 col-md-offset-2 col-md-8  text-center">
-                <p class="text-center">
+              </div> <!-- Close of first row-->
+              <div class="row">
+              <div id="intro-text" class="col-xs-12 col-sm-offset-1 col-sm-10 col-md-10  text-justify">
+                <p>
                   I am a Northeastern Student currently getting my degree in Computer Science, with a minor in Interaction Design
                   <br>
                   I worked at Medical Information Technology in 2016 for my first co-op, and I've also done research with Professor Kristian Kloeckl on visualizing the energy usage of campus buildings. These experiences have me looking to get into web programming and finding ways to communicate advanced models and concepts to a general audience through easy to use and understand visualizations and interaction interfaces, but I also find almost all aspects of computer science interesting, and love the wide variety of fields that this study can be relevant in. Thanks for checking out my website!
@@ -68,11 +69,10 @@
                   <div id="feed"></div>
                 </div>
               </div>
-              <!-- </div> -->
             </div>
           </div>
         </div>
-        <!--Close of main row-->
+        <!--Close of second row row-->
       </div>
       <!-- Bootstrap core JavaScript-->
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
