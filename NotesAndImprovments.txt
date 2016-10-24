@@ -1,63 +1,6 @@
-Week 4
-This is a nice improvement over last week's version. Good to see you have some more control over your content and are still able to keep that 'tabbed' effect you were looking for
+Implement this on sidebar
+https://codepen.io/lukezak/pen/LVJRva
 
-Now that you've got your layout here, start thinking about what real content you'll want to include. As you start putting that in there, you'll be able to style for your site's content rather than placeholders
+Implement this for toggling
+https://codepen.io/bojidar-bg/pen/XbVbXg
 
-With the way you've set this up, I think it would be cool to explore using solely the left sidebar as your navigation rather than both (as you alluded to in your notes). I find this to be an interesting treatment, and one not so often done. The way you are handling the tabs on mobile works nicely as well, and with some styles (perhaps a fixed position), they could be really slick
-
-Index.html
- <div id="Peytons-headshot" class="col-xs-12 col-lg-2 pull-right">
-                        <!-- Image dissapears on small screens, can't get to center-->
-                        <!-- Looks to me like the image stays for all screens, so maybe you fixed this. As for centering it, try using the 'center-block' instead of 'left-block' class like you did for the image below -->
-                        Use media queries to switch align
-
-<div id="intro-header" class="col-xs-12 col-lg-10 text-right">
-                        <!-- is there some way to get this to align vertically with the image?-->
-                        <!-- The easiest way is going to be to apply a top margin or padding to the text column, but not the image one. A more difficult method would be with Flexbox, which is quite powerful for controlling layouts, though has a steeper learning curve -->
-
-Ideas:
-Make attention grabber an Iframe, put in my visualizations but maybe allow for swapping between projects
-Make gifs of projects and have them swap, allow clicking for jumping to project tab
-
-Move tabs to being controlled by bootsraps
-- Or make columns wider than min width at all points
-
-MultiItemPage.html
-
-<a class="navbar-brand" href="#">Peyton Tiroff</a> <!-- I want to get this brand label to adjust width to match the tabs, and have the other three parts of the tab align to the right-->
-            <!-- A little confused by what you mean with this. Let's talk in class -->
-
-<div class="col-sm-6 col-md-4 col-lg-3">
-  <div class="thumbnail"> <!-- on medium-sized screen, this thumbnail is slightly longer than the others, causing the column that wraps to go all the way to the right. Is there a way just to have  them align below the column above them (as in, in line with column of grid but not row)-->
-
-  <!--
-
-  There are a few potential solutions here
-
-  [1] Using rows, as you mentioned, but this would cause some issues with wrapping the way you've got the grid set up now
-
-  [2] Again, Flexbox, a bit more complicated, but allows you to force all items in a row to be the same height
-
-  [3] Manually set the height for these divs. Not the best practice, but not automatically a bad one. It can be done in a way that the content never overflows its container, and will allow things to appear more smoothly across the board
-
-  -->
-    <img src="http://placehold.it/240x240" alt="Relevant Image? Categorical Marking?" class="center-block img-responsive">
-    <div class="caption">
-      <h4>Maybe some will just be links to pieces I like</h4>
-      <p>I mean I'm not going to say whats been said better</p>
-      <p><a href="#" class="btn btn-default" role="button">More</a></p>
-    </div>
-  </div>
-</div>
-
-<div class="col-sm-6 col-md-4 col-lg-3">
-  <div class="thumbnail">
-    <img src="http://placehold.it/240x240" alt="Relevant Image? Categorical Marking?" class="center-block img-responsive">
-    <div class="caption">
-      <h4>Also make this into a scrolling carousel?</h4>
-      <p>There's a good chance of this filling up very quickly</p> <!-- is there any way of getting this all to float up and smush together?-->
-      <!-- If you are referring to the 'quickly' breaking to a new line, there isn't really. This is controlled through the width of the container, so you'd need to manually adjust for it to appear the way you want at different breakpoints -->
-      <p><a href="#" class="btn btn-default" role="button">More</a></p>
-    </div>
-  </div>
-</div>
