@@ -19,7 +19,7 @@ h1, h2, h3, h4, h5, h6 {
   transition: all 0.5s ease;
 }
 
-#wrapper.toggled {
+#wrapper {
   padding-left: 250px;
 }
 
@@ -43,18 +43,18 @@ h1, h2, h3, h4, h5, h6 {
   background: rgba(0,0,0,0.2);
 }
 
-#wrapper.toggled #menu {
+#wrapper #menu {
   width: 250px;
 }
 
 #panel {
   width: 100%;
-  position: absolute;
+  position: relative;
   padding: 25px;
 }
 
-#wrapper.toggled #panel {
-  position: absolute;
+#wrapper #panel {
+  /*position: absolute;*/
   margin-right: -250px;
 }
 
@@ -142,14 +142,14 @@ h1, h2, h3, h4, h5, h6 {
   /*find something that works here?*/
 }
 
-/*GREATER THAN sm breakpoint*/
-@media (min-width: 768px ) {
+/*LESS THAN sm breakpoint*/
+@media (max-width: 768px ) {
 
   #wrapper {
     padding-left: 250px;
   }
 
-  #wrapper.toggled {
+  #wrapper {
     padding-left: 0;
   }
 
@@ -157,7 +157,7 @@ h1, h2, h3, h4, h5, h6 {
     width: 250px;
   }
 
-  #wrapper.toggled #menu {
+  #wrapper #menu {
     width: 0;
   }
 
@@ -166,10 +166,13 @@ h1, h2, h3, h4, h5, h6 {
     position: relative;
   }
 
-  #wrapper.toggled #panel {
+  #wrapper #panel {
     position: relative;
     margin-right: 0;
   }
+}
+/*LESS THAN sm breakpoint*/
+@media (min-width: 768px ) {
 
   #Peytons-headshot {
     order: 2;
