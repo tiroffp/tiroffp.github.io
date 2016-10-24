@@ -202,3 +202,87 @@ h1, h2, h3, h4, h5, h6 {
 .blue {
   background-color:  blue;
 }
+
+/*RESUME PAGE*/
+  section[role=main] {
+    padding: 21px 0;
+    overflow: hidden;
+  }
+
+  section[role=main] > div {
+    margin-top: 63px;
+  }
+
+  section[role=main] h3 {
+    border-bottom: 1px solid #e1e1e1;
+    padding: 0 0 20px 60px;
+    margin-top: 0px;
+    position: relative;
+  }
+
+  section[role=main] h3:after, h3:before {
+    content: ' ';
+    display: block;
+    height: 50px;
+    left: 0;
+    position: absolute;
+    top: -15px;
+    width: 50px;
+  }
+
+  section[role=main] h3:before {
+    background-color: #33a4c9;
+    border-radius: 25px;
+  }
+
+  .experiences ul, .education ul {
+    margin-left: 60px;
+  }
+
+  section[role=main] h4 {
+    margin-bottom: 0px;
+  }
+
+  section[role=main] h4 strong {
+    color: #147393;
+    font-weight: normal;
+  }
+
+  .experiences li, .education li {
+    margin-bottom: 63px;
+  }
+
+  .experiences li:last-child, .education li:last-child {
+    margin-bottom: 21px;
+  }
+
+  .experiences li p, .education li p {
+    margin-left: 30px;
+  }
+
+  .skills .bar li {
+    margin-bottom: 21px;
+    position: relative;
+  }
+
+  .skills .bar li:after {
+    background: #e1e1e1;
+    bottom: -4px;
+    content: ' ';
+    display: block;
+    height: 5px;
+    position: absolute;
+    width:100%;
+  }
+
+  .skills .bar li span {
+    background: #33a4c9;
+    bottom: -4px;
+    content: ' ';
+    display: block;
+    height: 5px;
+    left: 0;
+    position: absolute;
+    width: inherit;
+    z-index: 1;
+  }
