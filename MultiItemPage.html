@@ -13,6 +13,10 @@
   <!-- Bootstrap core CSS -->
   <link href="css/bootstrap.min.css" rel="stylesheet">
 
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Cabin|Droid+Sans|Ubuntu|Vollkorn" rel="stylesheet">
+
+<!-- My CSS -->
   <link href="css/styles.css" rel="stylesheet">
 
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -23,77 +27,79 @@
     </head>
 
     <body>
-      <!--http://www.bootply.com/74926#-->
-      <div class="container-fluid">
-        <div class="row">  <!--main row of page-->
-          <div class="col-xs-12 col-sm-2 tabs-left"> <!-- column containing tabs-->
-            <ul class="nav nav-tabs">
-              <li><a href="index.html">This Is Peyton</a></li>
-              <li><a href="#">Resume</a></li>
-              <li><a href="EnergyFlows.html">Research: Energy Flows</a></li>
-              <li><a href="#">A One Page Wonder</a></li>
-              <li class="active"><a href="#">Small Projects</a></li>
-            </ul>
-          </div>
-          <div class="col-xs-12 col-sm-10 tab-content"> <!-- Column containing content of tab-->
-            <div class="col-x-12">
-              <h2 class="text-center"><strong>Information Visualizations</strong></h2>
-            </div>
-            <div class="col-xs-8 col-xs-offset-2">
-            <p class="text-center">These are some of the visualizations in d3 I developed for my Special Topics:Information Visualization class. Most are done in d3.js. You can see my progress with the language as times goes on</p> <!--this disappears on small screens-->
-            </div>
-            <div class="col-sm-6 col-md-4 col-lg-3">
-              <div class="thumbnail">
-                <img src="static/firstchart.png" alt="My first data visualization" class="center-block img-responsive"> <!-- might make these images rectangular -->
-                <div class="caption">
-                  <h4>My Very First Chart</h4>
-                  <p>Made using c3.js, visualizing some very interesting data collected about our class</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-6 col-md-4 col-lg-3">
-              <div class="thumbnail">
-                <img src="static/hw2pt2.PNG" alt="My First D3 visual" class="center-block img-responsive">
-                <div class="caption">
-                  <h4>First pure d3 visual with fake data</h4>
-                  <p>Just learning the basics of d3</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-6 col-md-4 col-lg-3">
-              <div class="thumbnail">
-                <img src="http://placehold.it/240x240" alt="Relevant Image? Categorical Marking?" class="center-block img-responsive">
-                <div class="caption">
-                  <h4>Maybe my idea stubs and to-dos could go here</h4>
-                  <p>I've always got things I want to do</p>
-                </div>
-              </div>
-            </div>
-            <div class="clearfix visible-md-block"></div>
-            <div class="col-sm-6 col-md-4 col-lg-3 pull-left">
-              <div class="thumbnail">
-                <img src="static/hw2pt3.PNG" alt="Chart of car MPG based on distance traveled" class="center-block img-responsive">
-                <div class="caption">
-                  <h4>Miles Per Gallon vs Distance Traveled</h4>
-                  <p>Something a little more complex as a cut my teeth on d3</p>
-                </div>
-              </div>
-            </div>
-                        <div class="clearfix visible-lg-block"></div>
-            <div class="col-sm-6 col-md-4 col-lg-3">
-              <div class="thumbnail">
-                <img src="http://placehold.it/240x240" alt="Relevant Image? Categorical Marking?" class="center-block img-responsive">
-                <div class="caption">
-                  <h4>Also make this into a scrolling carousel?</h4>
-                  <p>There's a good chance of this filling up very quickly</p> <
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Close of main row -->
+     <!--https://github.com/BlackrockDigital/startbootstrap-simple-sidebar/blob/master/index.html-->
+     <div class id="wrapper">
+      <div id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+          <li><a href="index.html">This Is Peyton</a></li>
+          <li><a href="#">Resume</a></li>
+          <li><a href="EnergyFlows.html">Research: Energy Flows</a></li>
+          <li><a href="#">A One Page Wonder</a></li>
+          <li class="active"><a href="#">Small Projects</a></li>
+        </ul>
       </div>
-    </div>
+      <div id="content-wrapper">
+        <div class="content">
+          <div class="container-fluid">
+            <div class="row">  <!--main row of page-->
+              <div class="col-x-12">
+                <h2 class="text-center"><strong>Information Visualizations</strong></h2>
+              </div>
+              <div class="col-xs-8 col-xs-offset-2">
+                <p class="text-center">These are some of the visualizations in d3 I developed for my Special Topics:Information Visualization class. Most are done in d3.js. You can see my progress with the language as times goes on</p> <!--this disappears on small screens-->
+              </div>
+              <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="thumbnail">
+                  <img src="static/firstchart.png" alt="My first data visualization" class="center-block img-responsive"> <!-- might make these images rectangular -->
+                  <div class="caption">
+                    <h4>My Very First Chart</h4>
+                    <p>Made using c3.js, visualizing some very interesting data collected about our class</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="thumbnail">
+                  <img src="static/hw2pt2.PNG" alt="My First D3 visual" class="center-block img-responsive">
+                  <div class="caption">
+                    <h4>First pure d3 visual with fake data</h4>
+                    <p>Just learning the basics of d3</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="thumbnail">
+                  <img src="http://placehold.it/240x240" alt="Relevant Image? Categorical Marking?" class="center-block img-responsive">
+                  <div class="caption">
+                    <h4>Maybe my idea stubs and to-dos could go here</h4>
+                    <p>I've always got things I want to do</p>
+                  </div>
+                </div>
+              </div>
+              <div class="clearfix visible-md-block"></div>
+              <div class="col-sm-6 col-md-4 col-lg-3 pull-left">
+                <div class="thumbnail">
+                  <img src="static/hw2pt3.PNG" alt="Chart of car MPG based on distance traveled" class="center-block img-responsive">
+                  <div class="caption">
+                    <h4>Miles Per Gallon vs Distance Traveled</h4>
+                    <p>Something a little more complex as a cut my teeth on d3</p>
+                  </div>
+                </div>
+              </div>
+              <div class="clearfix visible-lg-block"></div>
+              <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="thumbnail">
+                  <img src="http://placehold.it/240x240" alt="Relevant Image? Categorical Marking?" class="center-block img-responsive">
+                  <div class="caption">
+                    <h4>Also make this into a scrolling carousel?</h4>
+                    <p>There's a good chance of this filling up very quickly</p> <
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Close of main row -->
+        </div>
+      </div>
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>

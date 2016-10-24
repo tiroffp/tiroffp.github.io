@@ -14,6 +14,10 @@
   <!-- Bootstrap core CSS -->
   <link href="css/bootstrap.min.css" rel="stylesheet">
 
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Cabin|Droid+Sans|Ubuntu|Vollkorn" rel="stylesheet">
+
+<!-- My CSS -->
   <link href="css/styles.css" rel="stylesheet">
 
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -24,97 +28,100 @@
     </head>
 
     <body>
-      <!--http://www.bootply.com/74926#-->
-      <div class="container-fluid">
-        <div class="row">
-          <!--main row of page-->
-          <div class="col-xs-12 col-sm-2 tabs-left">
-            <!-- column containing tabs-->
-            <ul class="nav nav-tabs">
-              <li><a href="index.html">This Is Peyton</a></li>
-              <li><a href="#">Resume</a></li>
-              <li class="active"><a href="#">Research: Energy Flows</a></li>
-              <li><a href="#">A One Page Wonder</a></li>
-              <li><a href="MultiItemPage.html">Small Projects</a></li>
-            </ul>
-          </div>
-          <div class="col-xs-12 col-sm-10 tab-content text-justify">
-            <!-- Column containing content of tab-->
-            <div class="row flex">
-              <div class="col-xs-12">
-                <div class="row">
+      <!--https://github.com/BlackrockDigital/startbootstrap-simple-sidebar/blob/master/index.html-->
+      <div class id="wrapper">
+        <div id="sidebar-wrapper">
+          <ul class="sidebar-nav">
+            <li><a href="index.html">This Is Peyton</a></li>
+            <li><a href="#">Resume</a></li>
+            <li class="active"><a href="#">Research: Energy Flows</a></li>
+            <li><a href="#">A One Page Wonder</a></li>
+            <li><a href="MultiItemPage.html">Small Projects</a></li>
+          </ul>
+        </div>
+        <div id="content-wrapper">
+          <div class="content">
+            <div class="container-fluid">
+              <div class="row flex text-justify">
+                <div class="col-xs-12">
                   <div class="col-xs-10 col-xs-offset-1 col-md-8 col-md-offset-2">
                     <h2 class="text-center"> <strong>Northeastern Energy Flows</strong></h2>
                   </div>
                 </div>
+                <div class="flex">
+                  <div class="col-xs-10 col-xs-offset-1 col-md-6 col-lg-7">
+                    <p>
+                      This project was an investigation on novel ways to represent the energy system of the Northeastern Boston campus led by Professor Kristian Kloeckl. This data was a classic example of abstract information without 'physical' visual representation that had important implications for those operating from within the system it came from. Decisions on cost and supplier venue, infrastructure development, and distribution of energy resources must be made based on a robust understanding of this data, and all users of this energy have a right to an understanding of the system as all will be affected by the implications it has on our environment. This project aimed to develop a visualzation of this data to fufill all these needs. The project was developed over the summer of 2015 and was evenutally presented as an exhibition in Gallery 360 on campus
+                      <br>
+                      <br>
+                    </p>
+                  </div>
+                  <div class="col-md-5 col-lg-4 visible-md-block visible-lg-block">
+                    <div class="thumbnail">
+                      <img src="static/energy1.jpg" class="img-responsive center-block">
+                    </div>
+                  </div>
+                </div>
+                <div class="flex">
+                  <div class="visible-md-block visible-lg-block col-md-4     col-md-offset-1">
+                    <div class="thumbnail">
+                      <img src="static/energy2.jpg" class="img-responsive center-block">
+                    </div>
+                  </div>
+                  <div class="col-xs-10 col-xs-offset-1 col-md-7 col-md-offset-0">
+                    <div class="visible-md-block visible-lg-block">
+                      <h4>My Involvement</h4>
+                    </div>
+                    <div class="visible-sm-block visible-xs-block col-xs-12 text-center">
+                      <h4>My Involvement</h4>
+                    </div>
+                    <p>
+                     I got involved in this project through the Honors Early Research Assistanceship program. I recieved an email about this program at the end of my spring semester my freshman year and was drawn to Professor Kloeckl's project because of its  cross-disipline nature. After Kloeckl decided to hire me for the project, I stayed on campus during the Summer 1 term (May and June) to take classes and work on this study. I was responsible for developing the interface in Processing, a java-based open-source programming language meant as an "electronic sketchbook" for projects in the visual arts. I worked alongside Yuecan Fan, who ran analysis on the data itself, and Mavas Dabas, who built the Mongo database to contain the data.
+                     <br>
+                     <br>
+                   </p>
+                 </div>
+               </div>
+               <div class="flex">
+                 <div class="col-xs-10 col-xs-offset-1 col-md-7 col-md-offset-1">
+                   <div class="visible-md-block visible-lg-block text-right">
+                    <h4>Reflection on participation</h4>
+                  </div>
+                  <div class="visible-sm-block visible-xs-block col-xs-12 text-center">
+                    <h4>Reflection on participation</h4>
+                  </div>
+                  <p>
+                    This was my first time working on a large-scale coding project outside of classwork. It was a great opportunity to finally apply what I had been learning in class and find how concepts learned in class applied to the actual process of developing software. This work was also the source of my interest in data visualization, which I am continuing to pursue today.
+                  </p>
+                </div>
+                <div class="col-md-4 visible-md-block visible-lg-block">
+                  <div class="thumbnail">
+                    <img src="static/energy3.jpg" class="img-responsive center-block">
+                  </div>
+                </div>
               </div>
-              <div class="col-xs-10 col-xs-offset-1 col-md-6 col-lg-7">
-                <p>
-                  This project was an investigation on novel ways to represent the energy system of the Northeastern Boston campus led by Professor Kristian Kloeckl. This data was a classic example of abstract information without 'physical' visual representation that had important implications for those operating from within the system it came from. Decisions on cost and supplier venue, infrastructure development, and distribution of energy resources must be made based on a robust understanding of this data, and all users of this energy have a right to an understanding of the system as all will be affected by the implications it has on our environment. This project aimed to develop a visualzation of this data to fufill all these needs. The project was developed over the summer of 2015 and was evenutally presented as an exhibition in Gallery 360 on campus
-                  <br>
-                  <br>
-                </p>
+              <div class="col-xs-12 spacer"></div>
+              <div class="col-xs-offset-1 col-xs-10 col-md-8 col-md-offset-2">
+                <div class="thumbnail text-center ">
+                  <div class="embed-responsive embed-responsive-16by9">
+                    <iframe src="https://www.youtube.com/embed/8ulJf-5w1co"></iframe>
+                  </div>
+                </div>
               </div>
-              <div class="col-md-5 col-lg-4 visible-md-block visible-lg-block">
+              <div class="col-xs-offset-1 col-xs-10 visible-xs-block visible-sm-block">
                 <div class="thumbnail">
                   <img src="static/energy1.jpg" class="img-responsive center-block">
                 </div>
               </div>
-              <div class="visible-md-block visible-lg-block col-md-4     col-md-offset-1">
+              <div class="col-xs-offset-1 col-xs-10 visible-xs-block visible-sm-block">
                 <div class="thumbnail">
                   <img src="static/energy2.jpg" class="img-responsive center-block">
                 </div>
               </div>
-              <div class="col-xs-10 col-xs-offset-1 col-md-7 col-md-offset-0">
-              <div class="visible-md-block visible-lg-block">
-                  <h4>My Involvement</h4>
+              <div class="col-xs-offset-1 col-xs-10 visible-xs-block visible-sm-block">
+                <div class="thumbnail">
+                  <img src="static/energy3.jpg" class="img-responsive center-block">
                 </div>
-                <div class="visible-sm-block visible-xs-block col-xs-12 text-center">
-                  <h4>My Involvement</h4>
-                </div>
-                <p>
-                 I got involved in this project through the Honors Early Research Assistanceship program. I recieved an email about this program at the end of my spring semester my freshman year and was drawn to Professor Kloeckl's project because of its  cross-disipline nature. After Kloeckl decided to hire me for the project, I stayed on campus during the Summer 1 term (May and June) to take classes and work on this study. I was responsible for developing the interface in Processing, a java-based open-source programming language meant as an "electronic sketchbook" for projects in the visual arts. I worked alongside Yuecan Fan, who ran analysis on the data itself, and Mavas Dabas, who built the Mongo database to contain the data.
-                 <br>
-                 <br>
-               </p>
-             </div>
-             <div class="col-xs-10 col-xs-offset-1 col-md-7 col-md-offset-1">
-             <div class="visible-md-block visible-lg-block text-right">
-                  <h4>Reflection on participation</h4>
-                </div>
-                <div class="visible-sm-block visible-xs-block col-xs-12 text-center">
-                  <h4>Reflection on participation</h4>
-                </div>
-               <p>
-                This was my first time working on a large-scale coding project outside of classwork. It was a great opportunity to finally apply what I had been learning in class and find how concepts learned in class applied to the actual process of developing software. This work was also the source of my interest in data visualization, which I am continuing to pursue today.
-              </p>
-            </div>
-            <div class="col-md-4 visible-md-block visible-lg-block">
-              <div class="thumbnail">
-                <img src="static/energy3.jpg" class="img-responsive center-block">
-              </div>
-            </div>
-            <div class="col-xs-12 spacer"></div>
-            <div class="col-xs-offset-1 col-xs-10 col-md-8 col-md-offset-2">
-              <div class="thumbnail text-center ">
-                <div class="embed-responsive embed-responsive-16by9">
-                  <iframe src="https://www.youtube.com/embed/8ulJf-5w1co"></iframe>
-                </div>
-              </div>
-            </div>
-            <div class="col-xs-offset-1 col-xs-10 visible-xs-block visible-sm-block">
-              <div class="thumbnail">
-                <img src="static/energy1.jpg" class="img-responsive center-block">
-              </div>
-            </div>
-            <div class="col-xs-offset-1 col-xs-10 visible-xs-block visible-sm-block">
-              <div class="thumbnail">
-                <img src="static/energy2.jpg" class="img-responsive center-block">
-              </div>
-            </div>
-            <div class="col-xs-offset-1 col-xs-10 visible-xs-block visible-sm-block">
-              <div class="thumbnail">
-                <img src="static/energy3.jpg" class="img-responsive center-block">
               </div>
             </div>
           </div>
