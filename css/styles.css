@@ -8,19 +8,22 @@
 
 .flex {
   display: flex;
-  flex-flow: row wrap;   
-  align-items: center;    
+  flex-flow: row wrap;
+  align-items: center;
 }
 
+.spacer {
+  height:50px;
+}
 
 /*GREATER THAN sm breakpoint*/
 @media (min-width: 768px ) {
 
-  #Peytons-headshot {      
+  #Peytons-headshot {
     order: 2;
   }
-  #intro-header {      
-    order: 1;      
+  #intro-header {
+    order: 1;
   }
 
   .tabs-left > .nav-tabs > li > a {
