@@ -4,3 +4,4 @@ https://codepen.io/lukezak/pen/LVJRva
 Implement this for toggling
 https://codepen.io/bojidar-bg/pen/XbVbXg
 
+Figure out a good way to make headers pop out - better than just coloring them differently
