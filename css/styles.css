@@ -134,8 +134,8 @@ h1, h2, h3, h4, h5, h6 {
   /*find something that works here?*/
 }
 
-/*GREATER THAN sm breakpoint*/
-@media (min-width: 768px ) {
+/*LESS THAN sm breakpoint*/
+@media (max-width: 768px ) {
 
   #Peytons-headshot {
     order: 2;
