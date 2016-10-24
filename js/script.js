@@ -1,3 +1,7 @@
+function selectSidepanel() { console.log('onload outputing'); alert('onload triggered'); }
+
+document.onload = selectSidepanel;
+
 GitHubActivity.feed({
     username: "tiroffp",
     // repository: "your-repo", // optional
