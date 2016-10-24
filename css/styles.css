@@ -123,6 +123,16 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #DDBB99;
 }
 
+.menu-pull {
+  background-color: #448877;
+  height: 3em;
+}
+
+.menu-pull > p {
+    position: absolute;
+    bottom: 0;
+}
+
 .highlight  p,
 .highlight h1,
 .highlight h2,
@@ -133,7 +143,7 @@ h1, h2, h3, h4, h5, h6 {
   /*find something that works here?*/
 }
 
-/*LESS THAN sm breakpoint*/
+/*GREATER THAN sm breakpoint*/
 @media (min-width: 768px ) {
 
   #Peytons-headshot {
@@ -167,7 +177,7 @@ h1, h2, h3, h4, h5, h6 {
     display: block;
   }
 
-  .btn-hamburger {
+  .img-burger {
     display: none;
   }
 
@@ -183,6 +193,12 @@ h1, h2, h3, h4, h5, h6 {
   #intro-header {
     text-align: center;
   }
+}
+/*These classes are for  quick identification of different divs when debugging */
+.red {
+  background-color:  red;
+}
 
-
+.blue {
+  background-color:  blue;
 }

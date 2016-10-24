@@ -29,7 +29,7 @@
     <body>
      <!--https://github.com/BlackrockDigital/startbootstrap-simple-sidebar/blob/master/index.html-->
      <div class id="wrapper">
-     <div id="menu">
+       <div id="menu">
         <ul class="sidebar-nav">
           <li><a href="index.html">This Is Peyton</a></li>
           <li><a href="#">Resume</a></li>
@@ -42,6 +42,13 @@
         <div class="content">
           <div class="container-fluid">
             <div class="row">  <!--main row of page-->
+              <div class="visible-xs-block col-xs-12 menu-pull">
+                <p>
+                  Swipe Me! =>
+                </p>
+              </div>
+            </div>
+            <div class="row">
               <div class="col-x-12">
                 <h2 class="text-center"><strong>Information Visualizations</strong></h2>
               </div>
@@ -111,11 +118,11 @@
     <script src="js/script.js"></script>
     <script>
       var slideout = new Slideout({
-    'panel': document.getElementById('panel'),
-    'menu': document.getElementById('menu'),
-    'padding': 256,
-    'tolerance': 70
-  });
+        'panel': document.getElementById('panel'),
+        'menu': document.getElementById('menu'),
+        'padding': 256,
+        'tolerance': 70
+      });
     </script>
   </body>
   </html>
