@@ -1,5 +1,119 @@
-.tabs-left > .nav-tabs {
+/*Palette http://www.colourlovers.com/palette/2704312/trout
+Also #D2E5EC (bluish grey)*/
+
+body {
+  background-color: #EEEEDD;
+  font-family: 'Cabin', sans-serif;
+  font-size: 1.5em;
+  /*font-family: 'Vollkorn', sans-serif;*/
+  /*font-family: 'Ubuntu', sans-serif;*/
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color:  #2E2E2E;
+  font-family: 'Droid Sans', serif;
+}
+#wrapper {
+  padding-left: 0;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+#wrapper.toggled {
+  padding-left: 250px;
+}
+
+#sidebar-wrapper {
+  z-index: 1000;
+  position: fixed;
+  left: 250px;
+  width: 0;
+  height: 100%;
+  margin-left: -250px;
+  overflow-y: auto;
+  background: #000;
+  border-right-style:   solid;
+  border-right-width:   5px;
+  border-right-color: #448877;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  background-color:   #EEEEDD;
+  background: rgba(0,0,0,0.2);
+}
+
+#wrapper.toggled #sidebar-wrapper {
+  width: 250px;
+}
+
+#content-wrapper {
+  width: 100%;
+  position: absolute;
+  padding: 25px;
+}
+
+#wrapper.toggled #content-wrapper {
+  position: absolute;
+  margin-right: -250px;
+}
+
+/* Sidebar Styles */
+
+.sidebar-nav {
+  position: absolute;
+  top: 0;
+  width: 245px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.sidebar-nav li {
+  text-indent: 20px;
+  line-height: 40px;
+}
+
+.sidebar-nav li a {
+  display: block;
+  text-decoration: none;
+  color: #2E2E2E;
+}
+
+.sidebar-nav li a:hover {
+  text-decoration: none;
+  background: rgba(255,255,255,0.8);
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+  text-decoration: none;
+}
+
+.sidebar-nav >.active{
+  background: #448877;
+}
+
+.sidebar-nav > .sidebar-brand {
+  height: 65px;
+  font-size: 18px;
+  line-height: 60px;
+}
+
+/*These classes are for  quick identification of different divs when debugging */
+.red {
+  background-color:  red;
+}
+
+.blue {
+  background-color:  blue;
+}
+
+.tabs-left > .siderbar{
   border-bottom: 0; /* removes line from bottom tab*/
+  position:   fixed;
 }
 
 .nav-tabs>li {
@@ -16,8 +130,48 @@
   height:50px;
 }
 
+.highlight {
+  background-color: #DDBB99;
+}
+
+.highlight  p,
+.highlight h1,
+.highlight h2,
+.highlight h3,
+.highlight h4,
+.highlight h5,
+.highlight h6 {
+  /*find something that works here?*/
+}
+
 /*GREATER THAN sm breakpoint*/
 @media (min-width: 768px ) {
+
+  #wrapper {
+    padding-left: 250px;
+  }
+
+  #wrapper.toggled {
+    padding-left: 0;
+  }
+
+  #sidebar-wrapper {
+    width: 250px;
+  }
+
+  #wrapper.toggled #sidebar-wrapper {
+    width: 0;
+  }
+
+  #content-wrapper {
+    padding: 20px;
+    position: relative;
+  }
+
+  #wrapper.toggled #content-wrapper {
+    position: relative;
+    margin-right: 0;
+  }
 
   #Peytons-headshot {
     order: 2;
@@ -26,20 +180,20 @@
     order: 1;
   }
 
-  .tabs-left > .nav-tabs > li > a {
+  .tabs-left > .siderbar> li > a {
 
   }
   /*Gives tab bottom border*/
-  .tabs-left > .nav-tabs {
+  .tabs-left > .siderbar{
     float: left;
     border-right: 1px solid #ddd;
   }
   /*Gives rounded tab edges*/
-  .tabs-left > .nav-tabs > li > a {
+  .tabs-left > .siderbar> li > a {
     -webkit-border-radius: 4px 0 0 4px;
     -moz-border-radius: 4px 0 0 4px;
     border-radius: 4px 0 0 4px;
-    height: 100px;
+    height: 22vh;
   }
 
 }
@@ -56,23 +210,4 @@
   }
 
 
-}
-.tabs-left > .nav-tabs > li > a:hover,
-.tabs-left > .nav-tabs > li > a:focus {
-  border-color: #eeeeee #dddddd #eeeeee #eeeeee;
-}
-
-.tabs-left > .nav-tabs .active > a,
-.tabs-left > .nav-tabs .active > a:hover,
-.tabs-left > .nav-tabs .active > a:focus {
-  border-color: #ddd transparent #ddd #ddd;
-  *border-right-color: #ffffff;
-}
-/*These classes are for  quick identification of different divs when debugging */
-.red {
-  background-color:  red;
-}
-
-.blue {
-  background-color:  blue;
 }
