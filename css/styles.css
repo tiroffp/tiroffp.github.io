@@ -135,7 +135,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*LESS THAN sm breakpoint*/
-@media (max-width: 768px ) {
+@media (min-width: 768px ) {
 
   #Peytons-headshot {
     order: 2;
