@@ -11,59 +11,13 @@ h1, h2, h3, h4, h5, h6 {
   color:  #2E2E2E;
   font-family: 'Droid Sans', sans-serif;
 }
-#wrapper {
-  padding-left: 0;
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-}
-
-#wrapper.toggled {
-  padding-left: 250px;
-}
-
-#menu {
-  z-index: 1000;
-  position: fixed;
-  left: 250px;
-  width: 0;
-  height: 100%;
-  margin-left: -250px;
-  overflow-y: auto;
-  background: #000;
-  border-right-style:   solid;
-  border-right-width:   5px;
-  border-right-color: #448877;
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-  background-color:   #EEEEDD;
-  background: rgba(0,0,0,0.2);
-}
-
-#wrapper.toggled #menu {
-  width: 250px;
-}
-
-#panel {
-  width: 100%;
-  position: absolute;
-  padding: 25px;
-}
-
-#wrapper.toggled #panel {
-  position: absolute;
-  margin-right: -250px;
-}
 
 /* Sidebar Styles */
 
 .sidebar-nav {
   position: absolute;
   top: 0;
-  width: 245px;
+  width: 256px;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -98,6 +52,44 @@ h1, h2, h3, h4, h5, h6 {
   height: 65px;
   font-size: 18px;
   line-height: 60px;
+}
+/*Styling for slideout.js*/
+.slideout-menu {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 0;
+  width: 100%;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  display: none;
+  background: #000;
+  background-color:   #EEEEDD;
+  background: rgba(0,0,0,0.2);
+}
+
+.slideout-panel {
+  position:relative;
+  z-index: 1;
+  will-change: transform;
+}
+
+.slideout-open,
+.slideout-open body,
+.slideout-open .slideout-panel {
+  background-color: #EEEEDD;
+  overflow: hidden;
+}
+
+.slideout-panel {
+  background-color: #EEEEDD;
+  border-left-style:  solid;
+  border-left-width: 5px;
+  border-left-color: #448877;
+}
+.slideout-open .slideout-menu {
+  display: block;
 }
 
 /*These classes are for  quick identification of different divs when debugging */
@@ -145,32 +137,6 @@ h1, h2, h3, h4, h5, h6 {
 /*GREATER THAN sm breakpoint*/
 @media (min-width: 768px ) {
 
-  #wrapper {
-    padding-left: 250px;
-  }
-
-  #wrapper.toggled {
-    padding-left: 0;
-  }
-
-  #menu {
-    width: 250px;
-  }
-
-  #wrapper.toggled #menu {
-    width: 0;
-  }
-
-  #panel {
-    padding: 20px;
-    position: relative;
-  }
-
-  #wrapper.toggled #panel {
-    position: relative;
-    margin-right: 0;
-  }
-
   #Peytons-headshot {
     order: 2;
   }
@@ -192,6 +158,18 @@ h1, h2, h3, h4, h5, h6 {
     -moz-border-radius: 4px 0 0 4px;
     border-radius: 4px 0 0 4px;
     height: 22vh;
+  }
+  /*Puts sidebar out on non-mobile devices*/
+  .slideout-panel {
+    margin-left: 256px;
+  }
+
+  .slideout-menu {
+    display: block;
+  }
+
+  .btn-hamburger {
+    display: none;
   }
 
 }
