@@ -23,7 +23,7 @@ h1, h2, h3, h4, h5, h6 {
   padding-left: 250px;
 }
 
-#sidebar-wrapper {
+#menu {
   z-index: 1000;
   position: fixed;
   left: 250px;
@@ -43,17 +43,17 @@ h1, h2, h3, h4, h5, h6 {
   background: rgba(0,0,0,0.2);
 }
 
-#wrapper.toggled #sidebar-wrapper {
+#wrapper.toggled #menu {
   width: 250px;
 }
 
-#content-wrapper {
+#panel {
   width: 100%;
   position: absolute;
   padding: 25px;
 }
 
-#wrapper.toggled #content-wrapper {
+#wrapper.toggled #panel {
   position: absolute;
   margin-right: -250px;
 }
@@ -153,20 +153,20 @@ h1, h2, h3, h4, h5, h6 {
     padding-left: 0;
   }
 
-  #sidebar-wrapper {
+  #menu {
     width: 250px;
   }
 
-  #wrapper.toggled #sidebar-wrapper {
+  #wrapper.toggled #menu {
     width: 0;
   }
 
-  #content-wrapper {
+  #panel {
     padding: 20px;
     position: relative;
   }
 
-  #wrapper.toggled #content-wrapper {
+  #wrapper.toggled #panel {
     position: relative;
     margin-right: 0;
   }
