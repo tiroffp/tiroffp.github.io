@@ -73,6 +73,11 @@ h1, h2, h3, h4, h5, h6 {
   position:relative;
   z-index: 1;
   will-change: transform;
+  background-color: #EEEEDD;
+  border-left-style:  solid;
+  border-left-width: 5px;
+  border-left-color: #448877;
+  min-height: 100%;
 }
 
 .slideout-open,
@@ -82,12 +87,6 @@ h1, h2, h3, h4, h5, h6 {
   overflow: hidden;
 }
 
-.slideout-panel {
-  background-color: #EEEEDD;
-  border-left-style:  solid;
-  border-left-width: 5px;
-  border-left-color: #448877;
-}
 .slideout-open .slideout-menu {
   display: block;
 }
