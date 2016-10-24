@@ -77,7 +77,7 @@ h1, h2, h3, h4, h5, h6 {
   border-left-style:  solid;
   border-left-width: 5px;
   border-left-color: #448877;
-  min-height: 100%;
+  min-height: 100vh;
 }
 
 .slideout-open,
