@@ -15,6 +15,6 @@ This is really great progress Peyton. Your site has come a long way since last w
 
 [2] In general, see if you can utilize whitespace between and around elements on your site a bit more. Contrary to most design mediums, the web gives us an infinite amount of space to work with, so don't be afraid to work with it
 
-[3] I would try to keep the width and spacing for your content's container consistent across all pages. For example, Resume and Small Projects appear to be full-width, while the homepage is using a container and the 'Energy Flows' page is full-width but offset. Establishing some consistency with how all of these are treated will establish a nice visual flow as users navigate through your website
+[3] I would try to keep the width and spacing for your content's container consistent across all pages. For example, Resume and Other Projects appear to be full-width, while the homepage is using a container and the 'Energy Flows' page is full-width but offset. Establishing some consistency with how all of these are treated will establish a nice visual flow as users navigate through your website
 
 -->
