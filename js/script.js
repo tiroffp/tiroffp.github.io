@@ -8,7 +8,7 @@ GitHubActivity.feed({
 var slideout; 
 
 function selectSidepanel() {
-    var slideout = new Slideout({
+    slideout = new Slideout({
     'panel': document.getElementById('panel'),
     'menu': document.getElementById('menu'),
     'padding': 256,
