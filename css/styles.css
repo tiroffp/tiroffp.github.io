@@ -266,6 +266,7 @@ ul {
 }
 
 /*other projects page*/
+/*tiling comes from http://www.bootply.com/92TgCBuTaU &  http://stackoverflow.com/questions/19244268/bootstrap-fluid-grid-system-with-different-height*/
 #projects-wrapper .row-of-thumbnails{
  -moz-column-width: 25em;
  -webkit-column-width: 25em;
