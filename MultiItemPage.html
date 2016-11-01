@@ -28,7 +28,7 @@
 
     <body>
      <!--https://github.com/BlackrockDigital/startbootstrap-simple-sidebar/blob/master/index.html-->
-     <div class id="wrapper">
+     <div class id="projects-wrapper">
        <div id="menu">
         <ul class="sidebar-nav">
           <li><a href="index.html">This Is Peyton</a></li>
@@ -41,62 +41,81 @@
       <div id="panel">
         <div class="content">
           <div class="container-fluid">
-            <div class="row">  <!--main row of page-->
+            <div class="row">
               <div class="visible-xs-block col-xs-12 menu-pull">
                 <p>
-                  Swipe Me! =>
+                  Swipe Me!
                 </p>
               </div>
             </div>
-            <div class="row">
-              <div class="col-x-12">
+            <div class="row main-row text-center">
+              <div class="col-lg-12">
                 <h2 class="text-center"><strong>Other Projects </strong></h2>
               </div>
-              <div class="col-sm-5 col-sm-offset-1 col-md-4 col-md-offset-2 col-lg-3 col-lg-offset-1">
-                <div class="thumbnail">
-                  <img src="static/firstchart.png" alt="My first data visualization" class="center-block img-responsive"> <!-- might make these images rectangular -->
-                  <div class="caption">
-                    <h4>My Very First Chart</h4>
-                    <p>Made using c3.js, visualizing some very interesting data collected about our class</p>
-                  </div>
+            </div>
+            <div class="row-of-thumbnails col-xs-12 col-sm-offset-1 col-sm-10 ">
+              <div class="thumbnail">
+                <img src="static/flickrscrollr.PNG" class="center-block img-responsive"> <!-- might make these images rectangular -->
+                <div class="caption">
+                  <h4>Flickr Scrollr</h4>
+                  <p>Desktop app made using Java (processing for graphics) that can scroll through all photos tagged with "Boston" on flickr, starting at the most recent. Made over a weekend as part of an application to a company on my first co-op search</p>
+                  <p><a href="http://www.github.com/tiroffp/flickrscrollr" class="btn btn-primary center-block" role="button">Repo</a> </p>
                 </div>
               </div>
-              <div class="col-sm-5 col-md-4 col-lg-3">
-                <div class="thumbnail">
-                  <img src="static/hw2pt2.PNG" alt="My First D3 visual" class="center-block img-responsive">
-                  <div class="caption">
-                    <h4>First pure d3 visual with fake data</h4>
-                    <p>Just learning the basics of d3</p>
-                  </div>
+              <div class="thumbnail">
+                <img src="static/twittermarkov.PNG" class="center-block img-responsive">
+                <div class="caption">
+                  <h4>Twitter Markov Bot</h4>
+                  <p>Final Project for Algorithms and Data. Bot that picks a trending twitter hashtag, creates a markov chain of the words in the top tweets for that tag, and generates (and submits) its own tweet using that markov model</p>
+                  <p><a href="http://www.github.com/tiroffp/twittermarkov" class="btn btn-primary center-block" role="button">Repo</a> </p>
                 </div>
               </div>
-              <div class="col-sm-5 col-sm-offset-1 col-md-4 col-md-offset-2 col-lg-3">
-                <div class="thumbnail">
-                  <img src="http://placehold.it/240x240" alt="Relevant Image? Categorical Marking?" class="center-block img-responsive">
-                  <div class="caption">
-                    <h4>Maybe my idea stubs and to-dos could go here</h4>
-                    <p>I've always got things I want to do</p>
-                  </div>
+              <div class="thumbnail">
+                <img src="static/slide.PNG" class="center-block img-responsive">
+                <div class="caption">
+                  <h4>Slide</h4>
+                  <p>To help myself learn Python, I made a clone of the popular mobile app "2048" using the tkinter framework. Also served as a refresher on concepts like MVC and unit testing</p>
+                  <p><a href="http://www.github.com/tiroffp" class="btn btn-primary center-block" role="button">Repo</a> </p>
                 </div>
               </div>
-              <div class="clearfix visible-md-block"></div>
-              <div class="col-sm-5 col-md-4 col-md-offset-2 col-lg-3 pull-left">
-                <div class="thumbnail">
-                  <img src="static/hw2pt3.PNG" alt="Chart of car MPG based on distance traveled" class="center-block img-responsive">
-                  <div class="caption">
-                    <h4>Miles Per Gallon vs Distance Traveled</h4>
-                    <p>Something a little more complex as a cut my teeth on d3</p>
-                  </div>
+              <div class="thumbnail">
+                <img src="static/superlists.PNG" class="center-block img-responsive">
+                <div class="caption">
+                  <h4>Superlists</h4>
+                  <p>Project made to learn the basics of webapp programming and Django. Comes from following <a href="http://chimera.labs.oreilly.com/books/1234000000754;">Test-Driven Development with Python</a></p>
+                  <p><a href="http://www.github.com/tiroffp" class="btn btn-primary center-block" role="button">Repo</a> </p>
                 </div>
               </div>
-              <div class="clearfix visible-lg-block"></div>
-              <div class="col-sm-5 col-sm-offset-1 col-md-offset-2 col-md-4 col-lg-3">
-                <div class="thumbnail">
-                  <img src="http://placehold.it/240x240" alt="Relevant Image? Categorical Marking?" class="center-block img-responsive">
-                  <div class="caption">
-                    <h4>Also make this into a scrolling carousel?</h4>
-                    <p>There's a good chance of this filling up very quickly</p> <
-                  </div>
+              <div class="thumbnail">
+                <img src="static/attendr.PNG" class="center-block img-responsive">
+                <div class="caption">
+                  <h4>Attendr</h4>
+                  <p>After completing the Superlists tutorial, I extended the project by modifying it into a webapp to track attendance. I was serving as Sectretary of my fraternity at the time, and the goal was to build an app that could replace our current excel-based system</p>
+                  <p><a href="http://www.github.com/tiroffp/attendr" class="btn btn-primary center-block" role="button">Repo</a> </p>
+                </div>
+              </div>
+              <div class="thumbnail">
+                <img src="static/oneoffs.PNG" class="center-block img-responsive">
+                <div class="caption">
+                  <h4>OneOffs</h4>
+                  <p>A collection of single-file scripts that I wanted to hold on to</p>
+                  <p><a href="http://www.github.com/tiroffp/oneoffs" class="btn btn-primary center-block" role="button">Repo</a> </p>
+                </div>
+              </div>
+              <div class="thumbnail">
+                <img src="static/InfoVis.PNG" class="center-block img-responsive">
+                <div class="caption">
+                  <h4>InfoVis</h4>
+                  <p>A repo of all my homeworks for my Special Topics: Information Visualization class. Generally the homeworks were split between written portions and active development of a javascript (d3.js) visuals, so this repo contains the latter</p>
+                  <p><a href="http://www.github.com/tiroffp/infovis" class="btn btn-primary center-block" role="button">Repo</a> </p>
+                </div>
+              </div>
+              <div class="thumbnail">
+                <img src="static/website.PNG" class="center-block img-responsive">
+                <div class="caption">
+                  <h4>tiroffp.github.io</h4>
+                  <p>You are here! This is the source code for this very website, as it is hosted on Github pages</p>
+                  <p><a href="http://www.github.com/tiroffp/tiroffp.github.io" class="btn btn-primary center-block" role="button">Repo</a> </p>
                 </div>
               </div>
             </div>
