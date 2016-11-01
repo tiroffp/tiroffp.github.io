@@ -1,20 +1,8 @@
-Implement this on sidebar
-https://codepen.io/lukezak/pen/LVJRva
-
-Implement this for toggling
-https://codepen.io/bojidar-bg/pen/XbVbXg
-
 Figure out a good way to make headers pop out - better than just coloring them differently
 
 
 <!--
 
-This is really great progress Peyton. Your site has come a long way since last week, and I'm impressed by the transformation. I'm sure some of my thoughts here are things you are working on or are already on your radar, but anyhow
-
-[1] For your Resume page, I think implementing a container for the main content and adding some space between each section would help tighten things up while also letting them breathe a bit more, providing more comfortable access to the information. I might even consider a 2-column layout for the narrower sections toward the bottom, floating education up next to experience and contact up next to hobbies
-
 [2] In general, see if you can utilize whitespace between and around elements on your site a bit more. Contrary to most design mediums, the web gives us an infinite amount of space to work with, so don't be afraid to work with it
-
-[3] I would try to keep the width and spacing for your content's container consistent across all pages. For example, Resume and Other Projects appear to be full-width, while the homepage is using a container and the 'Energy Flows' page is full-width but offset. Establishing some consistency with how all of these are treated will establish a nice visual flow as users navigate through your website
 
 -->
