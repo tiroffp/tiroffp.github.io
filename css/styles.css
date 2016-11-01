@@ -192,7 +192,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .resume h2 {
-  border-bottom: 1px solid #e1e1e1;
+  border-bottom: 1px solid #448877;
   padding: 0 0 20px 60px;
   margin-top: 0px;
   position: relative;
@@ -209,7 +209,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .resume h2:before {
-  background-color: #33a4c9;
+  background-color: #448877;
   border-radius: 25px;
 }
 
@@ -222,7 +222,7 @@ ul {
 }
 
 .resume h4 strong {
-  color: #147393;
+  color: #448877;
   /*font-weight: normal;*/
 }
 
@@ -254,7 +254,7 @@ ul {
 }
 
 .skills .bar li span {
-  background: #33a4c9;
+  background: #448877;
   bottom: -4px;
   content: ' ';
   display: block;
@@ -295,11 +295,6 @@ ul {
  color: black;
 }
 
-.btn:hover {
- background-color: #448877;
- border-style: none;
- color: black;
-}
 .btn:hover {
   background-color: #CCDFDA;
 }
