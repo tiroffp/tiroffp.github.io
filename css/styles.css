@@ -275,7 +275,7 @@ ul {
 
 }
 
-#projects-wrapper .thumbnail {
+ .thumbnail {
  display: inline-block;
  margin:  .5em;
  padding:  0;
